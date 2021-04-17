@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        {
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+        }
+        html{
+            position: relative;
+            min-height: 100%;
+        }
+
+        body{
+        font-family:arial, helvetica, sans-serif;
+        background-color:rgb(7, 1, 1);
+        color:aliceblue;
+         }
+         h1,h2,h3,h4,h5,h6 {
+             margin: 4px 0 4px 0;
+         }
+         .card {
+             box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+             text-align: center;
+
+         }
+         .card  img{
+             width: 100%;
+
+         }
+         .card-container{
+             padding: 16px;
+         }
+         .card-col{
+             float:left;
+             padding:8px 16px;
+             width: 50%;
+         }
+        
+        .floatfix::after{
+            content:"" ;
+            clear: both;
+            display: table;
+        }
+
+    </style>
+    </head>
+
+<body>
+    <title>Pedra Angular </title>
+
+
+    
+    
+    
+    <img src="Imagens/pedra.png"alt="Logo da empresa">
+    <!--formatar imagem-->
+<main class="floatfix">
+<header class="card-col"" ><h1> Esta parte é no header </h1>
+    <div class="card">
+    <p> <img src="Imagens/escada.png"></p>
+        <div class="card-container">
+        <h4>trabalho realizado</h4>
+    </div>
+    </div> 
+
+    <div class="card">
+        <p> <img src="Imagens/pia.png"></p>
+            <div class="card-container">
+            <h4>trabalho realizado</h4>
+        </div>
+        </div> 
+        
+    </header>
+
+</main>
+    <Footer>
+
+    </Footer>
+    
+</body>
+<script>
+    alert("Está no local certo para personalizar suas peças")
+</script>
+</html>
