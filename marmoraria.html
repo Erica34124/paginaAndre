@@ -1,139 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marmoraria</title>
-    <style>
-*{
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    margin: 8px 4px 8px 4px;
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pedra angular</title>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Roboto & display = swap" rel = "folha de estilo ">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     
-}
-html{
-    position: relative;
-    min-height :100% ;
-}
-h1,h2,h3,h4,h5,h6{
-    margin: 4px 0 4px 0;
-}
-header{
-    background-color: rgb(0, 3, 3);
-    overflow: hidden;
- 
-}
-header nav li{
-    float:right;
-}
-header a{
-    color: #fff;
-    padding: 20px 16px ;
-    display: block;
-}
-    
-
-nav{
-    
-    text-align: center;
-}
-nav li {
-    float: right;
-    padding: 20px 16px ;
-    
-}
-ul{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    
-    
-}
-
-
-.bnt{
-    position: absolute;
-    background-color: rgb(15, 18, 228); 
-    color:aliceblue;
-    border-radius: 5px;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50;
-    width: 30%;
-    height: 3%;
-    
-
-
-}
-.bnt:hover{
-    background-color: #4361ee;
-
-}
-
-.hero{
-    height: 480px;
-    background-image: url("imagens/escada.png");
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    position: relative;
-    
-}
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    color: #0a0ab1;
-
-    
-}
-section{
-    text-align: center;
-}
-.floatfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-    </style>
-    
-</head>
-<body>
-        <header>
+  </head>
+  <style>
+    *{
+        box-sizing:border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        margin: 8px 4px 8px 4px;
         
+    }
+    html{
+        position: relative;
+        min-height :100% ;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin: 4px 0 4px 0;
+    }
+    header{
+        background-color: rgb(0, 3, 3);
+        overflow: hidden;
+     
+    }
+    header nav li{
+        float:right;
+    }
+    header a{
+        color: #fff;
+        padding: 20px 16px ;
+        display: block;
+    }
+    nav{
         
-        <nav>
+        text-align: center;
+    }
+    nav li {
+        float: right;
+        padding: 20px 16px ;
+        
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none; 
+    }
+    
+    section{
+        text-align: center;
+    }
+    .floatfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    main{
+        text-align: center;
+        padding: 10%;
+        color: #fff;
+    }
+    
+    main{
+        margin: 0;
+        padding: 0;
+    }    
+    
+    .galeria {
+        position: relative;
+        margin: 200px auto;
+        width: 50% ;
+        height:50%;
+        overflow: hidden;
+    
+    }
+    .foto{
+        position:absolute;
+        opacity: 0;
+        animation-name: animacao;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    
+    }
+    .foto1:nth-child(1){
+        animation-delay: 0;
+    }
+    .foto2:nth-child(2){
+    animation-delay:5s;
+    }
+    .foto3:nth-child(3){
+        animation-delay:10s;
+    }
+    .foto4:nth-child(4){
+        animation-delay:15s;
+    }
+    .foto4:nth-child(5){
+        animation-delay:20s;
+    }
+    .foto4:nth-child(6){
+        animation-delay:25s;
+    }
+    .foto4:nth-child(7){
+        animation-delay:30s;
+    }
+    .foto4:nth-child(8){
+        animation-delay:35s;
+    }
+    .foto4:nth-child(9){
+        animation-delay:40s;
+    }
+    .foto4:nth-child(10){
+        animation-delay:45s;
+    }
+    
+    @keyframes animacao{
+        25%{
+            opacity: 1;
+            transform: scale(1.1, 1.1);
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+        </style>
+  <body>
+    
+      <div class='superInf-bg'>
+        <div class='superInf'>
+          <p>Aberto das 8hs as 17 hs segunda - sexta.</p>
+         <p> <a href="5519987018258">Telefone</a></p>
+          <p><a href="#">Endereço</a> </p>
+        </div>
+      </div> 
+      <header class="menu-bg">
+          <div class="menu">
+           <div class="menu-logo">
+              <img src="Imagens/pedra.png" style="width: 300px;" alt="">
+           </div>
+           <nav class="menu-nav">
             <ul>
-                <li><a href="missão.html"  target="_blank">Contato</a></li>
-                <li><a href="missão.html"  target="_blank">Missão visão e valores</a></li>
-                <li><a href="contato.html"  target="_blank">Nossa História</a></li>
-                <li><a href="marmoraria.html"  target="_blank">Home</a></li>
-            </ul>
-        </nav>
-        
-        
-    </header >
-    <img src="imagens/pedra.png" alt="logo da empresa">
-    <section >
-    <a href="imagens.html" class=" bnt"  target="_blank">Conheça nosso trabalho</a>
-    </section>
-    <div class="hero">
-        <h3 class="hero-text">O glamour em sua casa</h3>
+                <li><a href="index.html"  target="_blank" class="active">Pagina inicial</a></li>
+                <li><a href="missão.html"  target="_blank">Missão</a></li>
+                <li><a href="https://www.google.com.br/maps/place/R.+Lu%C3%ADs+Camilo+de+Camargo,+1330+-+Jardim+Santana,+Hortol%C3%A2ndia+-+SP,+13184-535/@-22.8642678,-47.2135839,624m/data=!3m1!1e3!4m5!3m4!1s0x94c8b95373b38807:0x633dab7767f29191!8m2!3d-22.8649016!4d-47.2083129"  target="_blank">Contato</a></li>
+                <li><a href="marmoraria.html"  target="_blank">Marmoraria</a></li>
+                <li><a href="historia.html"  target="_blank">História</a></li>
+              </ul>
+         </nav>
+        </div>
+      </header>
+    <div class="introducao">
+    <h1>Pedra Angular qualidade e preço em um só lugar</h1>
+    <br>
     </div>
-    
-    
-    
+    <main class="galeria">
+        <img class="foto foto1" src="Imagens/pia.png" alt="">
+        <img class="foto foto2 " src="Imagens/escada.png" alt="">
+        <img class="foto foto4 " src="Imagens/11.jpg" alt="">
+        <img class="foto foto5 " src="Imagens/13.jpg" alt="">
+        <img class="foto foto6 " src="Imagens/14.jpg" alt="">
+        <img class="foto foto7 " src="Imagens/20.jpg" alt="">
+        <img class="foto foto8 " src="Imagens/24.jpg" alt="">
+        <img class="foto foto9 " src="Imagens/9.jpg" alt="">
+        <img class="foto foto10 " src="Imagens/7.jpg" alt="">
+        <img class=" foto4 " src="Imagens/4.jpg" alt="">
+
+    </main>
+        
+    </header>
+
+</main>
+<footer class="container footer">
+    <p><a href="#" target="blank">acesse o Facebook</a></p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
