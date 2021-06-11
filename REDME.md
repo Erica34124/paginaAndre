@@ -15,21 +15,21 @@
         <div class='superInf'>
           <p>Aberto das 8hs as 17 hs segunda - sexta.</p>
          <p> <a href="5519987018258">Telefone</a></p>
-          <p>endereço</p>
+          <p><a href="#">Endereço</a> </p>
         </div>
       </div> 
       <header class="menu-bg">
         <div class="menu">
           <div class="menu-logo">
             
-            <img src="Imagens/pedra.png" alt="">
+            <img src="Imagens/pedra.png" style="width: 300px;" alt="">
           </div>
          <nav class="menu-nav">
           <ul>
-            <li><a href="#"></a>Sobre</li>
-            <li><a href="#"></a>Materia</li>
-            <li><a href="#"></a>Preços</li>
-            <li><a href="#"></a>Orçamento</li>
+            <li><a href="missão.html"></a>Sobre</li>
+            <li><a href="historia.html"></a>Hístoria</li>
+            <li><a href="marmoraria.html"></a>Materiais</li>
+            <li><a href="#"></a>Pagina inicial</li>
           </ul>
          </nav>
         </div>
@@ -42,13 +42,13 @@
 
     <section class="sobre", id="sobre">
           
-          <div class="sobre-infor">
+          <div class="sobre-info">
             <h1>Sobre</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio rem nulla, consectetur maxime nobis. Deserunt enim temporibus doloribus voluptatum voluptates. Doloremque modi quibusdam saepe dicta, provident veritatis adipisci eveniet.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, blanditiis. Accusamus, excepturi ea cum hic, eos illo quod enim nihil, ad assumenda neque natus! Corporis ducimus molestias corrupti beatae quam.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundada em 2001, promove peças planejadas em mármore com medidas personalizadas qualidade e garantia.</p>
+       
       </div>
       <div>
-        <img src="Imagens/10.png" alt="">
+        <img src="Imagens/12.jpg" alt="">
       </div>
       <div>
         <img src="Imagens/19.jpg" alt="">
@@ -76,59 +76,95 @@
     <section class="preco", id="preco">
       <div class="preco-item">
         <h2>Pia</h2>
-        <span><sup>R$ </sup>20.00</span>
+        <span class="p-pia"><sup>R$</sup></span>
         <ul>
-          <li>Material</li>
-          <li>altura</li>
-          <li>Largura</li>
+          <li> <form class="piaA" name="PiaA" id="PiaA" action="" method="POST">
+                <input type="number", name="piaAlt" id="piaAlt" placeholder="insira altura" value="10"  >
+                <button type="submit">Submit</button>
+              </form></li>
+          <li> <form  class="piaL" name="piaB" id="piaB" action="" method="POST">
+                  <input type="number", name="piaLa" id="piaLa" placeholder="insira Largura" value="20" >
+                  <button type="submit">Submit</button>
+               </form></li>
+          
+              <li><form name="piaC" id="piaC" class="newletter-form" action="" method="POST">
+                <input name="piaMa" id="piaMa" type="number", placeholder="qual material" value="8">
+                <button type="submit">Submit</button>
+              </form></li>
           <a href="#">Comprar</a>
         </ul>
         </div>
         <div class="preco-item">
         <h2>Bancada</h2>
-        <span><sup>R$ </sup>20,00</span>
+          <sup>R$ <span class="p-bancada"></span> </sup>
         <ul>
-          <li>Material</li>
-          <li>Altura</li>
-          <li>Largura</li>
+          <li> <form name="bancadaA" id="bancadaA" action="" method="POST">
+            <input name="banAlt" id="banAlt" type="text", placeholder="insira altura" >
+            <button type="submit">Submit</button>
+          </form></li>
+          <li> <form  name="bancadaB" id="bancadaB" action="" method="POST">
+            <input name="banLa" id="banLa" type="text", placeholder="insira Largura" >
+            <button type="submit">Submit</button>
+          </form></li>
+          
+          <li><form class="newletter-form" name="bancadaC" id="bancadaC" action="" method="POST">
+            <input type="text", name="banMa" id="banMa" placeholder="qual material" >
+            <button type="submit">Submit</button>
+          </form></li>
           <a href="#">Comprar</a>
         </ul>
         </div>
         <div class="preco-item">
         <h2>Piscina</h2>
-        <span><sup>R$ </sup>20,00</span>
+        <sup>R$ <span class="p-piscina"></span></sup>
         <ul>
-          <li>Material</li>
-          <li>Altura</li>
-          <li>Largura</li>
-          <li>Profundidade</li>
+          <li> <form name="piscinaA" id="piscinaA" action="" method="POST">
+            <input name="pisA" id="pisA" type="text", placeholder="insira altura" >
+            <button type="submit">Submit</button>
+          </form></li>
+          <li> <form name="piscinaB" id="piscinaB" action="" method="POST">
+            <input name="pisL" id="pisL" type="text", placeholder="insira Largura" >
+            <button type="submit">Submit</button>
+          </form></li>
+          <li><form name="piscinaC" id="piscinaC" action="" method="POST">
+            <input name="pisP" id="pisP" type="text", placeholder="insira profundidade" >
+            <button type="submit">Submit</button>
+          </form></li>
+          
+                   
+          <li><form class="newletter-form" name="piscinaD" id="piscinaD" action="" method="POST">
+            <input name="pisD" id="pisD" type="text", placeholder="qual material" >
+            <button type="submit">Submit</button>
+          </form></li>
           <a href="#">Comprar</a>
         </ul>
+
+          
       </div>
     </section>
     <section class="qualidade", id='qualidade'>
-      <div class="qualidade-item">
+      <div class="qualidade-item " >
         <h2>História</h2>
         
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
-      <div class="qualidade-item">
+      <div class="qualidade-item ">
         <h2>Qualidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
-      <div class="qualidade-item">
+      <div class="qualidade-item ">
         <h2>Qualidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
-      <div class="qualidade-item">
+      <div class="qualidade-item ">
         <h2>Qualidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
-      <div class="qualidade-item">
+      <div class="qualidade-item ">
         <h2>Qualidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
-      <div class="qualidade-item">
+      <div class="qualidade-item ">
         <h2>Qualidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque esse porro consequatur placeat, quo asperiores provident veritatis laudantium itaque quae consectetur veniam officia odit rem ipsam. Illo, velit dicta.</p>
       </div>
@@ -138,16 +174,19 @@
         <div class="newletter-inf">
           <h1>Orçamento via e-mail</h1>
           <p>Envie as medidas e o material selecionado para orçamento sem compromisso.</p>
-          <form class="newletter-form" action="">
+          <form class="newletter-form" action="/add" method="POST">
             <input type="text", placeholder="Seu email" >
             <button type="submit">Submit</button>
+            
           </form>
-        </div>
+        </div> 
+        
+        
 
       </section>
    
     <footer class="container footer">
-    <p>acesse o Facebook</p>
+      <p><a href="#" target="blank">acesse o Facebook</a></p>
     </footer>
     <script src="script.js"></script>
   </body>

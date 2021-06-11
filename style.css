@@ -36,6 +36,10 @@ body ,h1, h2,h3, h4, h5, h6 {
     }
     .superInf a {
       color: white;
+      cursor: pointer;
+    }
+    .superInf a:hover{
+      color:#aafc27
     }
     .superInf{
       max-width: 960px;
@@ -76,17 +80,18 @@ body ,h1, h2,h3, h4, h5, h6 {
     
     
     }
-    .menu-nav ul a{
-      font-size: 3em;
-      line-height: 1.4em;
-      padding: 20px;
+    .menu-nav ul li {
+      font-size: 16px;
+      line-height: 1em;
+      padding: 5px;
       display:block;
-      margin: 10px;;
+      margin: 1px;
+      cursor: pointer;
     
     }
     
-    .menu-nav ul a:hover{
-    color :#ee505d;
+    .menu-nav ul li:hover{
+      color:#aafc27
     }
     .introducao{
       font-size: 3 em;
@@ -94,6 +99,7 @@ body ,h1, h2,h3, h4, h5, h6 {
       max-width: 960px;
       margin: 0 auto;
       padding: 10px 60px;
+      
     }
     .sobre{
       border-top: 2px solid #2c70ff;
@@ -103,14 +109,21 @@ body ,h1, h2,h3, h4, h5, h6 {
       padding: 60px;
       display:flex;
     
+
+    
     }
     .sobre-info{
-      flex:2 1 300px;
+      flex:2 1 400px;
       margin:0  10px;
+    
+
+      
     }
     .sobre-info h1{
-    font-size: 3em;
-    padding-bottom: 5em;
+    font-size: 2em;
+    padding-bottom: 1em;
+    text-align:left;
+    
     }
     .sobre-info p{
       font-size:1.25em;
@@ -165,7 +178,6 @@ body ,h1, h2,h3, h4, h5, h6 {
     .preco{
       max-width: 960px;
       margin: 0 auto;
-      background:#a7a4a4;
       padding: 10px;
       display:flex;
       flex-wrap:wrap;
@@ -175,31 +187,39 @@ body ,h1, h2,h3, h4, h5, h6 {
     .preco-item{
       flex:1 1 160px;
       border: 10px solid #db1499;
-      padding: 20px;
+      padding: 10px;
       margin: 10px;
+      background:#a7a4a4;
       
   
   
     }
     preco-item h2{
       font-size:3em;
-      color: #a4a4a4;
       text-align: center;
       margin-top: 20px;
+      
     }
     .preco-item span{
       max-width:300px;
-      margin: 20px auto;
+      margin: 10px auto;
       display: block;
       text-align: center;
       font-weight: bold;
       padding: 10px 0 5px 0;
       border-top: 4px solid white;
       border-bottom: 4px solid white;
+      font-size: x-large;
+      color: #db1499;
   
+    }
+    .preco-item span value{
+      color: #db1499;
     }
     .preco-item sup{
       font-size:1.5rem;
+      color: #db1499;
+      
     }
     preco-item ul{
       max-width: 300px;
@@ -216,12 +236,12 @@ body ,h1, h2,h3, h4, h5, h6 {
       margin-bottom: 10px;
     }
     .preco-item li::after{
-  content: '';
-  display: block;
-  width: 6px;
-  height: 6px;
-  background: #2c70ff;
-  border-radius: 50%;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2c70ff;
+    border-radius: 50%;
     }
     .preco-item a{
       max-width: 300px;
@@ -249,41 +269,43 @@ body ,h1, h2,h3, h4, h5, h6 {
     }
    .qualidade{
      max-width: 960px;
-     margin:40px auto;
+     margin:60px auto;
      display:flex;
      flex-wrap: wrap;
+     
   
    }
    .qualidade-item{
-     flex: 1 1 100px;
-     margin: 10px 5px;
+     flex: 1 1 300px;
+     margin: 20px 10px;
+    
    }
    .qualidade-item h2{
      font-size: 1.75em;
      color:#a4a4a4;
      margin-bottom:20px;
      
-    
-  
+   
    }
    .qualidade-item h2::before{
      content:"";
      display: inline-block;
      width:8px;
-     height:20px;
+     height:30px;
      margin-right: 10px;
-     background: blue;
+     background: rgb(145, 255, 0);
   
    }
-   .qualidade-item h2:nth-of-type(3n+1)::before{
-     background:  #db0d0d;
+   .qualidade-item:nth-of-type(3n+1) h2::before{
+     background: rgb(145, 255, 0);
    }
-    .qualidade-item h2:nth-of-type(3n+2)::before{
-     background: #12df60;
-   }
-    .qualidade-item h2:nth-of-type(3n+3)::before{
-     background: #b0f70c;
-   }
+   .qualidade-item:nth-of-type(3n+2) h2::before{
+    background: rgb(24, 45, 226);
+  }
+  .qualidade-item:nth-of-type(3n+3) h2::before{
+    background: rgb(241, 12, 165);
+  }
+  
    .qualidade-item p{
      font-size:1.25em;
      line-height: 1.4;
@@ -293,27 +315,22 @@ body ,h1, h2,h3, h4, h5, h6 {
    .newletter{
      
      background:#7c7c7c;
-     padding: 60px auto;
+     padding: 40px auto;
      display:flex;
      flex-wrap:wrap;
-     
-  
-  
+      
    }
    .newletter-inf{
-     flex:1 1 100px;
-     padding:  40px;
+    
+     flex:1 1 300px;
+     padding: 40px 40px 0 40px;
      background:#7c7c7c;
    }
-   .newletter-inf h1{
-     font-size:2em;
-     color:#122ab2;
-  
-   }
+   
    .newletter-inf p{
+    
      font-size:1.25em;
      font-style: italic;
-     max-width: 700px;
      margin-bottom: 10px;
    }
    .newletter-form{
@@ -347,8 +364,27 @@ body ,h1, h2,h3, h4, h5, h6 {
       padding: 30px 10px;
   
     }
+    .form-lab{
+      display:block;
+      font-weight: bold;
+      margin-top:.5rem ;
+      margin-bottom: 2rem;
+    } 
+    .form{
+      max-width: 400px;
+      margin: 0 auto;
+      background: #12df60;
+    } 
+    .inp{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px;
+      border: 2px solid #000;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }  
   .footer{
-    height: 200px;
+    height: 100px;
     display:flex;
     background: #122ab2;
     align-items:center;
@@ -357,8 +393,15 @@ body ,h1, h2,h3, h4, h5, h6 {
   }
   .footer p{
     flex:1;
-    text-align: center;
+    text-align: justify;
     font-size: 2.25em;
     color: rgb(224, 220, 220);
+    cursor: pointer;
   }
-  
+  .footer a{
+    color: #c2dbe5;
+  }
+  .footer a:hover{
+    
+    color: #12df60;
+  }
