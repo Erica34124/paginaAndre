@@ -14,7 +14,7 @@
       <div class='superInf-bg'>
         <div class='superInf'>
           <p>Aberto das 8hs as 17 hs segunda - sexta.</p>
-         <p> <a href="5519987018258">Telefone</a></p>
+         <p> <a href="tel:5519987018258">Telefone</a></p>
           <p><a href="#">Endereço</a> </p>
         </div>
       </div> 
